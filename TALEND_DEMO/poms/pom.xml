@@ -12,6 +12,10 @@
     <module>code/routines</module>
     <module>code/beans</module>
     <module>jobs/process/demojob_0.1</module>
+    <module>jobs/process/copy_of_mf_rpc_designtime_0.1</module>
+    <module>jobs/process/mf_rpc_runtime_0.1</module>
+    <module>jobs/process/mf_rpc_designtime_0.1</module>
+    <module>jobs/process/copy_of_mf_rpc_runtime_0.1</module>
   </modules>
   <properties>
     <signer.version>7.3.1</signer.version>

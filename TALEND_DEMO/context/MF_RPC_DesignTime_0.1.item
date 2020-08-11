@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><talendfile:ContextType xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmlns:xmi="http://www.omg.org/XMI" confirmationNeeded="false" name="MF_RPC_DESIGN_TIME" xmi:id="_DqhS4NuPEeqP_vfbN1SfaQ" xmi:version="2.0">
+  <contextParameter comment="" name="cobolContent" prompt="Cobol Content?" promptNeeded="true" type="id_String" value="        IDENTIFICATION DIVISION.                                           &#10;        PROGRAM-ID. ITEMDE.&#10;        DATA DIVISION.&#10;        LINKAGE SECTION.&#10;        01 DFHCOMMAREA.&#10;           03 ITEM-NUM        PIC S9(8) COMP.&#10;           03 ITEM-RECORD.&#10;             05 ITEM-NAME     PIC X(16).&#10;             05 DESCRIPTION   PIC X(28).&#10;             05 WEIGHT        PIC S9(4) COMP.&#10;           03 SHIPPING.&#10;             05 SHIPPING-METHOD        PIC X(10).&#10;             05 DAYS          PIC S9(4) COMP.&#10;        PROCEDURE DIVISION.&#10;            MOVE 'AIR MAIL  ' TO SHIPPING-METHOD.&#10;            MOVE 2 TO DAYS.&#10;            EVALUATE ITEM-NUM&#10;              WHEN  1000&#10;                 MOVE 'Kid Guitar     ' TO ITEM-NAME&#10;                 MOVE 'Kids Guitar - Musical Toys   ' TO DESCRIPTION&#10;                 MOVE 200 TO WEIGHT&#10;              WHEN 1001&#10;                   MOVE 'Ball Pool      ' TO ITEM-NAME&#10;                   MOVE 'Ball Pool - Novelty Toys   ' TO DESCRIPTION&#10;                   MOVE 100 TO WEIGHT&#10;              WHEN 1002&#10;                   MOVE 'Water Ball     ' TO ITEM-NAME&#10;                   MOVE 'Water Ball - Balls         ' TO DESCRIPTION&#10;                   MOVE 1000 TO WEIGHT&#10;               WHEN 1003&#10;                   MOVE 'Frisbee        ' TO ITEM-NAME&#10;                   MOVE  'Dog Frisbee - Pet Toys     ' TO DESCRIPTION&#10;                   MOVE 5000 TO WEIGHT&#10;              WHEN 1004&#10;                   MOVE 'Pig Bank       ' TO ITEM-NAME&#10;                   MOVE 'Pig Saving Bank - Ceramics ' TO DESCRIPTION&#10;                   MOVE 5000 TO WEIGHT&#10;              WHEN OTHER&#10;                 MOVE 0 TO WEIGHT&#10;                 MOVE 'ERROR          ' TO ITEM-NAME&#10;                 MOVE 'OBJECT NOT FOUND          ' TO DESCRIPTION&#10;            END-EVALUATE.&#10;            EXEC CICS RETURN END-EXEC&#10;            .&#10;" xmi:id="_DqhS4duPEeqP_vfbN1SfaQ"/>
+  <contextParameter comment="" name="executionPath" prompt="execution Path?" promptNeeded="true" type="id_String" value="ITEMDET" xmi:id="_DqhS4tuPEeqP_vfbN1SfaQ"/>
+  <contextParameter comment="" name="cobolFile" prompt="Cobol File?" promptNeeded="true" type="id_File" value="" xmi:id="_DqhS49uPEeqP_vfbN1SfaQ"/>
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_c4c6ebf7-7749-4042-90c6-a89c960ac4d8"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>k/C1zEoNR2NL6q4TuLhGRwhkFkSZ2r2jop+a80qKAi0qhG78vndPy1IJjpLnXHyN/90fb9VZs6MO
+HJLhBvu/4g==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_6ff4f6da-ec54-43e0-b797-d9a5ae89f583"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7dD7WxRGRZMIWlLhlS/z91b6Ov2+x+9kHsV3HdpdSVJGg20sNGc34ih/KyETSom+XFYcs9OiXyMw
+apLnTUFVrg==</DigestValue></Reference></SignedInfo><SignatureValue>LHlwksh9jMRUIaJ18d3eOe4AaBSdZ39hdorQXJpxOdKgTeyCp9UtN19+VuUjtLJTp0eBfG5QYJ4A
+8R4EzrY0jsytar/G/mjz6W7fJP15f06Pq16j9VAdJXzMmg+16Ff3aPIqFy04j8cBkPHzP2kSb9VF
+p0vheFLeqeNLOq7Rsc1zHJA92i12Ptoq11GxxvFyKLYMgPLP/2jFr1lMkc8KrqIgqmSQlYcp+4XH
+uoT2gITIi9cKPiwhngTzLXAin2jvdOIdu9+3n9DhHSv60Ry9DOJWQM9/hQPHHkzM7GTdHltxlzEI
+rs/+oVmvY9PLvpTtOKukF9jIf+P4bDrOhld5rA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
+VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
+QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
+YWxlbmQgQ29kZSBTaWduaW5nIGNlcnRpZmljYXRlMQwwCgYDVQQLDANSJkQxFDASBgNVBAoTC1Rh
+bGVuZCBJbmMuMQ4wDAYDVQQHEwVQYXJpczEOMAwGA1UECBMFUGFyaXMxCzAJBgNVBAYTAkZSMIIB
+IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAp5TMF8BmRt8dY51t9kIDdDkoOKVVytJN2gn2
+DhMGi8hzpUofNDykJDhe9SPqyJdGZ6o/h7laTA0/CivKyPT1OJQ9E2gMHKs8cTZM/cO2w0Atlqkl
+alIxepol0DNnUtmECVBqdnVsJesfmdoeptxgJAtxYbquFsTsrATNY2cscXpwmOca/Ewip48WQLFx
+e5s067jaIsAQGRIqpIup3bOtWBySrtImJ40lQCPeEcl96qzkv3utaVaNc3ukkhYkCDbMbK8NVd1B
+CVeeIBAe+n/SdpHH20o+6eIiZecsBGDLwlTYrFvuVqAa6xI7y8Vdz6irjPAVBEtG/iOc782aJ/lZ
+TwIDAQABo3UwczAMBgNVHRMBAf8EAjAAMA4GA1UdDwEB/wQEAwIHgDATBgNVHSUEDDAKBggrBgEF
+BQcDAzAdBgNVHQ4EFgQUGdfzQEbjQnANq28sfhEMTx+rsOcwHwYDVR0jBBgwFoAU530Lcvy1gZnG
+gCvZLOyCczK1qPcwDQYJKoZIhvcNAQELBQADggIBAEr22wnaQwZm2dhbUCqD+qZpTq2AF/tzxqAM
+eL/CiTjPbTblS4SNNwCKvTgMe9ucpUbenXmK7xE+DU9dN4om+t3VHbkOLQVyuLcd2WGsy7ZGwRvA
+f+TFwLbwjyTukOGm6Sd1qyZgvCPzBsKnft6vscvGy2yEpmFCeHJyBP8pvchg607zguRdNbkGYZXw
+G6jNipAbTtzdPTFKKr1bEf0sUGqMrlZIMPjflh2Vewu8ImNdX5IZdvBD6DdFVOC5wqV6u+W9ukE/
+mXZxDBYNl2AF7FTh04ucEVN3mHv7m2L0uFvUlhxchcagJhJsdQG+A0LVCemHbp6CSNQJx02KxqUG
+hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
+WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
+gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
+qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_6ff4f6da-ec54-43e0-b797-d9a5ae89f583" Target="#_c4c6ebf7-7749-4042-90c6-a89c960ac4d8"><Timestamp>2020-08-11 04:56:46</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ContextType>
