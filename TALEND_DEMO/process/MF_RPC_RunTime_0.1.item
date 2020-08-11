@@ -57,7 +57,7 @@
     <elementParameter field="TEXT" name="PROPERTIES_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:XC9MeN032WOC6rEFWcCq9HZ+f6MuWNMTG++wCuAb"/>
+    <elementParameter field="PASSWORD" name="PASS_IMPLICIT_CONTEXT" show="false" value="enc:system.encryption.key.v1:/g2jUpQ+fqrQE+4ZvSiqyk0Lme5CnsE6cQga0gnB"/>
     <elementParameter field="FILE" name="DBFILE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="DBTABLE_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="QUERY_CONDITION_IMPLICIT_CONTEXT" show="false" value="&quot;&quot;"/>
@@ -92,7 +92,7 @@
     <elementParameter field="TEXT" name="PROPERTIES" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="SCHEMA_DB" show="false" value="&quot;&quot;"/>
     <elementParameter field="TEXT" name="USER" show="false" value="&quot;&quot;"/>
-    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:ee5R9WnlU1wQYmWhnCch1qSKbij3xMJKW3e1koDP"/>
+    <elementParameter field="PASSWORD" name="PASS" show="false" value="enc:system.encryption.key.v1:FKth/il9lY9jPeWIxHm5ozueH6Wv57Sx7ZLH7C9j"/>
     <elementParameter field="FILE" name="DBFILE" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_STATS" show="false" value="&quot;&quot;"/>
     <elementParameter field="DBTABLE" name="TABLE_LOGS" show="false" value="&quot;&quot;"/>
@@ -139,7 +139,7 @@
     <metadata connector="REJECT" name="REJECT"/>
     <metadata connector="FLOW" name="OpenLegacy_Mainframe_RPC_OpenLegacy_Send_Input_1">
       <column comment="" key="false" length="-1" name="operationDefinition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="inputBody" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="OpenLegacy_Mainframe_RPC_OpenLegacy_Invoke_Program" componentVersion="1" offsetLabelX="0" offsetLabelY="0" posX="480" posY="256">
@@ -154,11 +154,11 @@
     <metadata connector="MERGE" name="MERGE"/>
     <metadata connector="FLOW" name="OpenLegacy_Mainframe_RPC_OpenLegacy_Invoke_Program_1">
       <column comment="" key="false" length="-1" name="operationDefinition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="inputBody" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
     <metadata connector="REJECT" name="REJECT">
       <column comment="" key="false" length="-1" name="operationDefinition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="inputBody" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="288">
@@ -170,7 +170,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputRaw_1">
       <column comment="" key="false" length="-1" name="operationDefinition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="inputBody" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <node componentName="tFileOutputRaw" componentVersion="0.101" offsetLabelX="0" offsetLabelY="0" posX="768" posY="160">
@@ -182,7 +182,7 @@
     <elementParameter field="TEXT" name="CONNECTION_FORMAT" value="row"/>
     <metadata connector="FLOW" name="tFileOutputRaw_2">
       <column comment="" key="false" length="-1" name="operationDefinition" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
-      <column comment="" key="false" length="-1" name="inputBody" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
+      <column comment="" key="false" length="-1" name="body" nullable="true" originalLength="-1" pattern="" precision="-1" sourceType="" type="id_String" usefulColumn="true"/>
     </metadata>
   </node>
   <connection connectorName="FLOW" label="row1" lineStyle="0" metaname="OpenLegacy_Mainframe_RPC_OpenLegacy_Send_Input_1" offsetLabelX="0" offsetLabelY="0" source="OpenLegacy_Mainframe_RPC_OpenLegacy_Send_Input_1" target="OpenLegacy_Mainframe_RPC_OpenLegacy_Invoke_Program_1">
@@ -190,7 +190,7 @@
       <elementValue elementRef="TRACE_COLUMN" value="operationDefinition"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
-      <elementValue elementRef="TRACE_COLUMN" value="inputBody"/>
+      <elementValue elementRef="TRACE_COLUMN" value="body"/>
       <elementValue elementRef="TRACE_COLUMN_CHECKED" value="true"/>
       <elementValue elementRef="TRACE_COLUMN_CONDITION" value=""/>
     </elementParameter>
@@ -215,13 +215,13 @@
     <elementParameter field="COLOR" name="SUBJOB_TITLE_COLOR" show="false" value="92;131;150"/>
     <elementParameter field="COLOR" name="SUBJOB_COLOR" value="207;226;236"/>
   </subjob>
-<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_0c893134-f17a-4b56-bd18-a7e96f22c778"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>NFB0XL7QDCquAAyD19FCaXw96NyMTtZs9RFFnwXHVqToCSTlKjTCB0e2mABZdF0S8d4Swt66BL2n
-cumYuHgb5A==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_cddbcae2-23a2-477c-8275-9356c3c8160c"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>dL/fmNmVEbSDNiQWGGfDx6aV+nNMQF0neDGA+Ue06pHtqWuwqF41L4o+oY9o5/is2r5k0+/qcvvI
-ZNE7uaUt9A==</DigestValue></Reference></SignedInfo><SignatureValue>mxapGSgVeb2BNK4Px3kioTcor3b547jL99vfsQ7FrTQrPmXHekkNv4Zpc/betunfrqgsnFR+E+2n
-H36mWz0mrUZhl3qtzmy961KdKE2RQ+FJjp9mN1Sa9vaAWKyVQVFUrpX2lE+T1Sjb7fSkqO4LdjUX
-NAPghPuR1zZzlrXEmblzB3Tu4HkGuRIVjPhcZZHeNFbADMC9+IYuJuUuE6NgEL4BojqRhBf+7ACG
-gEqbKWpyaNS9dOet/nmh7OaF0xncNoSTZ0/02hlqSEDDNSbYjXkV4jVixp5VDZ4127RHMizjyJPv
-Z6GvEuHukliV9NP4XEn9K3Q3ze8iST0dvoA/rQ==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
+<Signature xmlns="http://www.w3.org/2000/09/xmldsig#" Id="_ca5fd61a-f195-4049-a6a1-b20548f73eef"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha512"/><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>YdavDh5nh1tULv7tINibmc9Gp91xxEvbLAus/QhUL1+H9z7Ym4QTBM78l8qhlf4WFC5Rm1aW3Ewn
+diLfbZ8jzQ==</DigestValue></Reference><Reference Type="http://www.w3.org/2000/09/xmldsig#SignatureProperties" URI="#_0be615fc-6455-4632-be47-9805af96c776"><Transforms><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></Transforms><DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha512"/><DigestValue>7zF1Udl6E1k2XF+ZU1/epH5ECIyTPNXzixFehJfuBSOhake8xOwcztiSOEghfyJX7aQMZJJfnXxq
+J43ibx/RTQ==</DigestValue></Reference></SignedInfo><SignatureValue>KOjZgi2HZWb2QPOoqF6U/isxNyFQQcU5bm3c0goF0Mv1SGT4K7SexgiMTqdhDvWyFrGdkX8NVUgD
+CRRxLhXcL7fLgVmvVzg4i51Oo+c8SBb2RFiHJt7qv9F+Cg1tteizbffyPMmyxMzf6AcgfUQpw0Mc
+/ot7BRpQXOBQqcD/FPjHqpbquunDt32o7SxDVIzzkivGdteMABrtq6FmZDVGD/CktzVrwyoyMoK6
+ow55bjrOpjp/NR4cSMDGcPHpD0v3s1OpgEnOZO1T7zl+29hthgz7gNYTbHtIanIuBZNqB3wm4akr
+d0DCGgd1q/tDwIXhKvp2EtojXNN1pkgA6OIykA==</SignatureValue><KeyInfo><X509Data><X509SubjectName>C=FR,ST=Paris,L=Paris,O=Talend Inc.,OU=R&amp;D,CN=Talend Code Signing certificate</X509SubjectName><X509Certificate>MIIFADCCAuigAwIBAgIIA2OsD6bRyj0wDQYJKoZIhvcNAQELBQAwgY0xCzAJBgNVBAYTAkZSMQ4w
 DAYDVQQIEwVQYXJpczEOMAwGA1UEBxMFUGFyaXMxFDASBgNVBAoTC1RhbGVuZCBJbmMuMQwwCgYD
 VQQLDANSJkQxFjAUBgNVBAMMDVRhbGVuZCBSJkQgQ0ExIjAgBgkqhkiG9w0BCQEWE3NlY3VyaXR5
 QHRhbGVuZC5jb20wHhcNMTkwNjAzMDgxODIwWhcNMjkwNjAzMDAwMDAwWjB7MSgwJgYDVQQDEx9U
@@ -243,4 +243,4 @@ hakvpzhOyLo91h8YAQrEZJdNuKA8IYmBrFZQZDCz0uywKSyFfzPyJhvxylCLG/iDPPfE0VWcrMJ/
 WQJly/2XPg/NBCTF3pSKS0kCiA7PeaI3cWkMYYA3PMwYDvzqs1opBRglG7ikj0bQxSm3lcjMuuvW
 gBRksFKjP3K/nztsjSoYITOM9jR29ReIL3v0E8RbAFwA2RGq6Dxd0ixfbucMesy5Gnr8tfYy6rW+
 qSQqd3ah4+PSzBNVwIB4ytpdrG3SlhCI2i2Th8ek8Sjsaquh9qPAerWNd2+84HWOOGj1Xe1qc6vg
-qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_cddbcae2-23a2-477c-8275-9356c3c8160c" Target="#_0c893134-f17a-4b56-bd18-a7e96f22c778"><Timestamp>2020-08-11 08:17:11</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
+qqu6JoK9EXKDiwBqDVkueIa+MhamE1VDnhn2pPui</X509Certificate></X509Data></KeyInfo><Object><SignatureProperties><SignatureProperty Id="_0be615fc-6455-4632-be47-9805af96c776" Target="#_ca5fd61a-f195-4049-a6a1-b20548f73eef"><Timestamp>2020-08-11 08:19:24</Timestamp></SignatureProperty></SignatureProperties></Object></Signature></talendfile:ProcessType>
